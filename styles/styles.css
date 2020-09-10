@@ -1,5 +1,5 @@
 .main {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 110vh;
   background-image: url('../images/bg1.jpg');
   background-position: center;
@@ -7,21 +7,22 @@
 }
 
 .ctn {
-  border: 1px solid rgba(185, 184, 184, 0.3);
+  /* border: 1px solid rgba(185, 184, 184, 0.3); */
   width: 55%;
   margin: 10px auto;
   border-radius: 5px;
-  background-image: linear-gradient(to bottom, rgba(185, 184, 184, 0.3), rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(to bottom, rgba(87, 85, 85, 0.6), rgba(0, 0, 0, 0.6));
   color: white;
 }
 
 .main-stats-ctn {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 200px;
   width: 500px;
   margin: 30px auto;
   padding: 10px;
   display: flex;
+  font-family: 'Caveat', cursive;
 }
 
 .main-search-bar {
@@ -39,19 +40,23 @@
   outline: none;
 }
 
+.main-search-bar input::placeholder {
+  font-family: 'Caveat', cursive;
+}
+
 /* .main-search-bar input:focus {
   border: 1px solid rgba(197, 188, 169, 0.89);
   border-radius: 10px 0 10px 0;
 } */
 
 .main-stats-name {
-  border: 3px dashed darkcyan;
+  /* border: 3px dashed darkcyan; */
   flex: 1;
   padding: 10px;
 }
 
 .main-stats-temp {
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
   flex: 1;
   padding: 10px;
   display: flex;
@@ -70,17 +75,17 @@
 }
 
 .name {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 10px 15px;
 }
 
 .name h3 {
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 38px;
+  font-weight: 700;
 }
 
 .wind-pressure {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 20px;
   /* padding: 10px 15px; */
   display: flex;
@@ -93,6 +98,7 @@
 
 .btn {
   text-align: center;
+  padding-bottom: 15px;
 }
 
 .btn button {
@@ -104,23 +110,35 @@
   color: rgb(75, 30, 30);
   font-size: 18px;
   font-weight: 700;
+  outline: none;
+  font-family: 'Caveat', cursive;
 }
 
 .see-more {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 500px;
   margin: 30px auto;
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  font-family: 'Caveat', cursive;
 }
 
 .more {
-  border: 1px solid black;
-  padding: 5px;
+  /* border: 1px solid black; */
+  padding: 15px;
   text-align: center;
+}
+
+.borders {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
 
 .more p:first-child {
   margin-bottom: 10px;
+}
+
+.see-more {
+  display: none;
 }
