@@ -1,0 +1,126 @@
+.main {
+  border: 1px solid red;
+  height: 110vh;
+  background-image: url('../images/bg1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.ctn {
+  border: 1px solid rgba(185, 184, 184, 0.3);
+  width: 55%;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, rgba(185, 184, 184, 0.3), rgba(0, 0, 0, 0.6));
+  color: white;
+}
+
+.main-stats-ctn {
+  border: 1px solid green;
+  height: 200px;
+  width: 500px;
+  margin: 30px auto;
+  padding: 10px;
+  display: flex;
+}
+
+.main-search-bar {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-search-bar input {
+  margin-right: 200px;
+  margin-top: 40px;
+  padding: 10px 15px;
+  border: 1px solid rgba(197, 188, 169, 0.89);
+  border-radius: 10px 0 10px 0;
+  outline: none;
+}
+
+/* .main-search-bar input:focus {
+  border: 1px solid rgba(197, 188, 169, 0.89);
+  border-radius: 10px 0 10px 0;
+} */
+
+.main-stats-name {
+  border: 3px dashed darkcyan;
+  flex: 1;
+  padding: 10px;
+}
+
+.main-stats-temp {
+  border: 2px solid pink;
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-stats-temp p:first-child {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.main-stats-temp p {
+  flex: 1;
+  text-align: center;
+}
+
+.name {
+  border: 1px solid red;
+  padding: 10px 15px;
+}
+
+.name h3 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.wind-pressure {
+  border: 1px solid red;
+  margin-top: 20px;
+  /* padding: 10px 15px; */
+  display: flex;
+}
+
+.wind-pressure p {
+  flex: 1;
+  padding: 10px;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  background: rgb(242, 247, 183);
+  color: rgb(75, 30, 30);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.see-more {
+  border: 2px solid red;
+  width: 500px;
+  margin: 30px auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.more {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.more p:first-child {
+  margin-bottom: 10px;
+}
