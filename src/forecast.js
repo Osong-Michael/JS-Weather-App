@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import { apiKey, apiURL, displayForecast } from './index';
 
 
