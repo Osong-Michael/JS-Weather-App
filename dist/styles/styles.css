@@ -92,8 +92,10 @@
 }
 
 .wind-pressure p {
+  /* border: 1px solid red; */
   flex: 1;
-  padding: 10px;
+  padding: 5px;
+  font-size: 18px;
 }
 
 .btn {
@@ -128,6 +130,7 @@
   /* border: 1px solid black; */
   padding: 15px;
   text-align: center;
+  font-size: 20px;
 }
 
 .borders {
@@ -139,6 +142,10 @@
   margin-bottom: 10px;
 }
 
-.see-more {
+.d-none {
   display: none;
+}
+
+#description {
+  font-size: 25px;
 }
