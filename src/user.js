@@ -1,4 +1,4 @@
-// import { apiKey, setIcons, convertToCel } from './index';
+/* eslint-disable import/no-cycle */
 import { description, icon } from './utils';
 import {
   locationName, degFahr, degCel, speed, pressure,
