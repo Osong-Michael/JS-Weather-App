@@ -27,6 +27,10 @@ const userLoad = () => {
           pressure.textContent = `Pressure: ${data.main.pressure}Pa`;
           const iconPic = data.weather[0].icon;
           setIcons(icon, iconPic);
+        }).catch((error) => {
+          // Handle the error
+          // eslint-disable-next-line no-console
+          console.log(error);
         });
     });
   } else if (!navigator.geolocation) {

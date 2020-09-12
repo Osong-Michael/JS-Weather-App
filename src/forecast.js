@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-cycle
 import { apiKey, apiURL, displayForecast } from './index';
 
 
@@ -14,7 +13,10 @@ function displayResult(results) {
 
 function forecast(city) {
   fetch(`${apiURL}forecast?q=${city}&units=metric&APPID=${apiKey}`)
-    .then(result => result.json()).then(displayResult);
+    .then(result => result.json()).then(displayResult).catch((error) => {
+      // eslint-disable-next-line no-console
+      console.log(error);
+    });
 }
 
 

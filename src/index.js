@@ -66,7 +66,11 @@ function displayCity(weather) {
 
 function getCity(city) {
   fetch(`${apiURL}weather?q=${city}&units=metric&APPID=${apiKey}`)
-    .then(weather => weather.json()).then(displayCity);
+    .then(weather => weather.json()).then(displayCity).catch((error) => {
+      // Handle the error
+      // eslint-disable-next-line no-console
+      console.log(error);
+    });
 }
 
 function searchCity(e) {
