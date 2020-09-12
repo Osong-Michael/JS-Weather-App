@@ -1,11 +1,9 @@
-import { apiKey, setIcons, convertToCel } from './index';
+// import { apiKey, setIcons, convertToCel } from './index';
 import { description, icon } from './utils';
-
-const locationName = document.getElementById('location-name');
-const degFahr = document.getElementById('fahr');
-const degCel = document.getElementById('celsius');
-const speed = document.getElementById('speed');
-const pressure = document.getElementById('pressure');
+import {
+  locationName, degFahr, degCel, speed, pressure,
+  apiKey, setIcons, convertToCel,
+} from './index';
 
 
 const userLoad = () => {
@@ -31,6 +29,9 @@ const userLoad = () => {
           setIcons(icon, iconPic);
         });
     });
+  } else if (!navigator.geolocation) {
+    // eslint-disable-next-line no-alert
+    alert('Allow location services to see your current weather details');
   }
 };
 

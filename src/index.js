@@ -118,4 +118,5 @@ function displayForecast(list) {
 
 export {
   apiKey, apiURL, displayForecast, setIcons, convertToCel,
+  locationName, degFahr, degCel, speed, pressure,
 };
