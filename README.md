@@ -75,7 +75,7 @@ To get a local copy up and running follow these simple steps.
 git clone https://github.com/OA7/JS-Weather-App.git
 ```
 2. Open with your favorite text editor.
-3. Make sure you have a `Live Server extension` installed on your code editor, if so the open go to the dist folder open `index.html` with the live server.
+3. Make sure you have a `Live Server extension` installed on your code editor, if so then go to the dist folder open `index.html` with the live server.
 
 <!-- ROADMAP -->
 ## Roadmap
