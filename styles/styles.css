@@ -129,6 +129,6 @@
   display: none;
 }
 
-#description {
+.description {
   font-size: 25px;
 }
