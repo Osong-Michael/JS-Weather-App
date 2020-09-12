@@ -19,39 +19,40 @@
         <div class="main-stats-ctn">
           <div class="main-stats-name">
             <div class="name">
-              <h3>New York, US</h3>
+              <h3 id="location-name">New York, US</h3>
             </div>
             <div class="wind-pressure">
-              <p>Wind Speed</p>
-              <p>Pressure</p>
+              <p id="speed"></p>
+              <p id="pressure"></p>
             </div>
           </div>
           <div class="main-stats-temp">
-            <p>45°C | 120°F</p>
-            <p>Sky Image</p>
+            <p><span id="celsius">45°C</span> | <span id="fahr">120°F</span></p>
+            <canvas class="icon" width="100" height="100"></canvas>
+            <p id="description">Cloudy</p>
           </div>
         </div>
         <div class="btn">
-          <button>See More</button>
+          <button id="btn">See More</button>
         </div>
         <div class="see-more">
           <div class="more">
-            <p>MON</p>
-            <p>45°C | 120°F</p>
+            <p id="see1">MON</p>
+            <p id="see1-b">45°C | 120°F</p>
           </div>
           <div class="more borders">
-            <p>MON</p>
-            <p>45°C | 120°F</p>
+            <p id="see2">MON</p>
+            <p id="see2-b">45°C | 120°F</p>
           </div>
           <div class="more">
-            <p>MON</p>
-            <p>45°C | 120°F</p>
+            <p id="see3">MON</p>
+            <p id="see3-b">45°C | 120°F</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
-<script src="main.js"></script>
+<script src="../src/skycons.js"></script>
+<script src="main.js" type="module"></script>
 </body>
 </html>
