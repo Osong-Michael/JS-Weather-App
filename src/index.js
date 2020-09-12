@@ -1,8 +1,11 @@
-// eslint-disable-next-line import/no-cycle
+/* eslint-disable import/no-cycle */
+/* eslint-disable max-len */
 import forecast from './forecast';
 import {
   day1, day1P, day2, day2P, day3, day3P, button, forecastDiv, icon, description,
 } from './utils';
+
+import userLoad from './user';
 
 const locationName = document.getElementById('location-name');
 const degFahr = document.getElementById('fahr');
@@ -45,8 +48,12 @@ function setIcons(icon, iconID) {
 }
 
 
+window.onload = () => {
+  userLoad();
+};
+
+
 function displayCity(weather) {
-  // console.log(weather);
   locationName.textContent = `${weather.name}, ${weather.sys.country}`;
   degCel.textContent = `${Math.round(weather.main.temp)}°C`;
   degFahr.textContent = `${Math.round(convertToCel(weather.main.temp))}°F`;
@@ -109,4 +116,6 @@ function displayForecast(list) {
 }
 
 
-export { apiKey, apiURL, displayForecast };
+export {
+  apiKey, apiURL, displayForecast, setIcons, convertToCel,
+};
