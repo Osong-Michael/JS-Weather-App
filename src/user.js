@@ -2,9 +2,21 @@
 import { description, icon } from './utils';
 import {
   locationName, degFahr, degCel, speed, pressure,
-  apiKey, setIcons, convertToCel,
+  apiKey, setIcons, convertToCel, apiError,
 } from './index';
 
+
+function setProps(data) {
+  // Set default element
+  locationName.textContent = `${data.name}, ${data.sys.country}`;
+  degCel.textContent = `${Math.round(data.main.temp)}°C`;
+  degFahr.textContent = `${Math.round(convertToCel(data.main.temp))}°F`;
+  description.textContent = data.weather[0].description;
+  speed.textContent = `Humidity: ${data.main.humidity}%`;
+  pressure.textContent = `Pressure: ${data.main.pressure}Pa`;
+  const iconPic = data.weather[0].icon;
+  setIcons(icon, iconPic);
+}
 
 const userLoad = () => {
   if (navigator.geolocation) {
@@ -18,19 +30,10 @@ const userLoad = () => {
         .then(response => {
           return response.json();
         }).then(data => {
-          // Set default element
-          locationName.textContent = `${data.name}, ${data.sys.country}`;
-          degCel.textContent = `${Math.round(data.main.temp)}°C`;
-          degFahr.textContent = `${Math.round(convertToCel(data.main.temp))}°F`;
-          description.textContent = data.weather[0].description;
-          speed.textContent = `Humidity: ${data.main.humidity}%`;
-          pressure.textContent = `Pressure: ${data.main.pressure}Pa`;
-          const iconPic = data.weather[0].icon;
-          setIcons(icon, iconPic);
+          setProps(data);
         }).catch((error) => {
           // Handle the error
-          // eslint-disable-next-line no-console
-          console.log(error);
+          apiError(error);
         });
     });
   } else if (!navigator.geolocation) {

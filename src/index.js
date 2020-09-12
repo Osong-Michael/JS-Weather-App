@@ -52,6 +52,11 @@ window.onload = () => {
   userLoad();
 };
 
+function apiError(error) {
+  // eslint-disable-next-line no-alert
+  alert(error);
+}
+
 
 function displayCity(weather) {
   locationName.textContent = `${weather.name}, ${weather.sys.country}`;
@@ -69,7 +74,7 @@ function getCity(city) {
     .then(weather => weather.json()).then(displayCity).catch((error) => {
       // Handle the error
       // eslint-disable-next-line no-console
-      console.log(error);
+      apiError(error);
     });
 }
 
@@ -122,5 +127,5 @@ function displayForecast(list) {
 
 export {
   apiKey, apiURL, displayForecast, setIcons, convertToCel,
-  locationName, degFahr, degCel, speed, pressure,
+  locationName, degFahr, degCel, speed, pressure, apiError,
 };

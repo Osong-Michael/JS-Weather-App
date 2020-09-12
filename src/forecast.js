@@ -1,5 +1,7 @@
 /* eslint-disable import/no-cycle */
-import { apiKey, apiURL, displayForecast } from './index';
+import {
+  apiKey, apiURL, displayForecast, apiError,
+} from './index';
 
 
 function displayResult(results) {
@@ -16,7 +18,7 @@ function forecast(city) {
   fetch(`${apiURL}forecast?q=${city}&units=metric&APPID=${apiKey}`)
     .then(result => result.json()).then(displayResult).catch((error) => {
       // eslint-disable-next-line no-console
-      console.log(error);
+      apiError(error);
     });
 }
 
