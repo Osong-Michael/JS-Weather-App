@@ -1,0 +1,134 @@
+.main {
+  height: 110vh;
+  background-image: url('../images/bg1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.ctn {
+  width: 55%;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, rgba(87, 85, 85, 0.6), rgba(0, 0, 0, 0.6));
+  color: white;
+}
+
+.main-stats-ctn {
+  height: 200px;
+  width: 500px;
+  margin: 30px auto;
+  padding: 10px;
+  display: flex;
+  font-family: 'Caveat', cursive;
+}
+
+.main-search-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-search-bar input {
+  margin-right: 200px;
+  margin-top: 40px;
+  padding: 10px 15px;
+  border: 1px solid rgba(197, 188, 169, 0.89);
+  border-radius: 10px 0 10px 0;
+  outline: none;
+}
+
+.main-search-bar input::placeholder {
+  font-family: 'Caveat', cursive;
+}
+
+.main-stats-name {
+  flex: 1;
+  padding: 10px;
+}
+
+.main-stats-temp {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-stats-temp p:first-child {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.main-stats-temp p {
+  flex: 1;
+  text-align: center;
+}
+
+.name {
+  padding: 10px 15px;
+}
+
+.name h3 {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.wind-pressure {
+  margin-top: 20px;
+  display: flex;
+}
+
+.wind-pressure p {
+  flex: 1;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.btn {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.btn button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  background: rgb(242, 247, 183);
+  color: rgb(75, 30, 30);
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+  font-family: 'Caveat', cursive;
+}
+
+.see-more {
+  width: 500px;
+  margin: 30px auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: 'Caveat', cursive;
+}
+
+.more {
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.borders {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.more p:first-child {
+  margin-bottom: 10px;
+}
+
+.d-none {
+  display: none;
+}
+
+.description {
+  font-size: 25px;
+}
