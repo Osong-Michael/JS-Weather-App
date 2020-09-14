@@ -21,7 +21,7 @@
     <a href="https://github.com/OA7/JS-Weather-App"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a target="_blank" href="https://oa7.github.io/JS-Weather-App/">View Demo</a>
     ·
     <a href="https://github.com/OA7/JS-Weather-App/issues">Report Bug</a>
     ·
